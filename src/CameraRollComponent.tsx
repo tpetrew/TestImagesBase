@@ -7,7 +7,7 @@ export const CameraRollComponent = () => {
     const [mediaData, setMediaData] = useState<PhotoIdentifier[]>([]);
 
     const getPhotos = async () => {
-        const params: GetPhotosParams = { first: 50 };
+        const params: GetPhotosParams = { first: 152 };
         const { page_info, edges } = await CameraRoll.getPhotos(params);
         setMediaData((prev) => [...prev, ...edges]);
     };

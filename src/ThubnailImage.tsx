@@ -46,5 +46,5 @@ export const ThumbnailImage = ({ uri, extension }: ThumbnailType) => {
       break;
   }
 
-  return <Image source={{ uri: `${prefix}${base64Image}` }} style={{ width: Dimensions.get("window").width, height: 100}} />;
+  return <Image source={{ uri: `${prefix}${base64Image}` }} style={{ width: 100, height: 100}} />;
 };
